@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .gameArea{
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        .playerArea{
+            float: left;
+            background-color: black;
+        }
+        .compArea{
+            background-color: dimgray;
+        }
+        .playerArea, .compArea{
+            display:inline-block;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            color: white;
+        }
+        img{
+            height: 35%;
+            width: 35%;
+            border: none;
+        }
+
+        h2{
+            color: #022c3e;
+            text-align: center;
+        }
+        button{
+            width: 100%;
+            height: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gameArea">
+        <div class="playerArea">
+            <h1>Player</h1>
+            <img class="imageOption" id="rock" src="images/rock_hand.png"/>
+            <img class="imageOption" id="paper" src="images/paper_hand.png"/>
+            <img class="imageOption" id="scissor" src="images/scissors-hand.png"/>
+        </div>
+        <div class="compArea">
+            <h1>Computer</h1>
+            <img class="imageOption" id="compRock" src="images/rock_hand.png"/>
+            <img class="imageOption" id="compPaper" src="images/paper_hand.png"/>
+            <img class="imageOption" id="compScissor" src="images/scissors-hand.png"/>
+        </div>
+        <button class="reset">Reset Game</button>
+        <div class="response"></div>
+
+    </div>
+</body>
+</html>
